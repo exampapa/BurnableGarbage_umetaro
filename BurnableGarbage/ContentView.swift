@@ -29,14 +29,16 @@ struct ContentView: View {
 //
 //            VStack {
 //                NavigationLink {
-//                    TouchGarbage()
+//                    TouchGarbage(ButtonGarbageOn: $ButtonGarbageOn,
+//                                 HomeOn: $HomeOn)
 //                } label: {
 //                    Text("タッチ①")
 //                }
 //                .padding()
 //
 //                NavigationLink {
-//                    SwipGarbage()
+//                    SwipGarbage(SwipViewOn: $SwipViewOn,
+//                                HomeOn: $HomeOn)
 //                } label: {
 //                    Text("スワイプ②")
 //                }
@@ -106,8 +108,7 @@ struct ContentView: View {
         if SwipViewOn{
             SwipGarbage(
                 SwipViewOn: $SwipViewOn,
-                HomeOn: $HomeOn
-            )
+                HomeOn: $HomeOn)
         }
         
         

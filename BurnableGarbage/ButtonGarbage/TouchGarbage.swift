@@ -29,7 +29,7 @@ struct TouchGarbage: View {
         Correct.currentTime = 0.0
         Correct.play()
     }
-    private func playSoundWrong(){
+    public func playSoundWrong(){
         Wrong.stop()
         Wrong.currentTime = 0.0
         Wrong.play()

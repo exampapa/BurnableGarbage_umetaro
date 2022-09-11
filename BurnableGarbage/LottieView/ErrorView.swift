@@ -58,6 +58,7 @@ struct SplashErrorhScreen: View {
 struct errorView: UIViewRepresentable {
 
     @Binding var show: Bool
+    
 
     func makeUIView(context: Context) -> some AnimationView {
         let view = AnimationView(name: "error", bundle: Bundle.main)
